@@ -29,7 +29,7 @@ class Pads extends Component {
 
   render() {
   return (
-    <div className='drum-pad' id={this.props.id} onClick={this.playSound}>
+    <div className='pad' id={this.props.id} onClick={this.playSound}>
       <button>
         {this.props.text}
         <audio className='clip' id={this.props.text} src={this.props.url}></audio>

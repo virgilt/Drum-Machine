@@ -41,7 +41,7 @@ class App extends Component {
     return (
       <div id='drum-machine'>
         <p id='display'>{this.state.display}</p>
-        {drumPads}
+        <div id='drum-pads'>{drumPads}</div>
       </div>
     );
   }

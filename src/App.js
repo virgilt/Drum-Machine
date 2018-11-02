@@ -18,8 +18,10 @@ class App extends Component {
   }
 
   handleDisplay = (desc) => {
+    let display = [...this.state.display];
+    display = desc;
     this.setState({
-      display: desc,
+      display: display,
     })
   }
 
@@ -34,6 +36,7 @@ class App extends Component {
           key={pad.id}
           keypad={pad.keypad}
           handleDisplay={this.handleDisplay}
+          handleActive={this.handleActive}
         />
       )
     })

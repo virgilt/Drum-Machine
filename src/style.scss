@@ -19,19 +19,34 @@
     grid-template-rows: 100px 100px 100px;
     grid-gap: 20px;
 
-    button {
+    .inactivePad {
       width: 100px;
       height: 100px;
       background-color: #73B4FF;
       border-radius: 20px;
       border: none;
       outline: none;
-      box-shadow: 1px 1px 1px 2px #38597F;
+      box-shadow: 1px 1px 1px 1px #38597F, 1px 1px 1px 1px #BFDDFF inset;
       font-size: 30px;
       color: #38597F
     }
-    button:hover {
+
+    .activePad {
+      width: 100px;
+      height: 100px;
+      background-color: #FFCD73;
+      border-radius: 20px;
+      border: none;
+      outline: none;
+      box-shadow: 1px 10px 10px 2px #7F7460, 1px 1px 1px 1px #FFE8BF inset;
+      font-size: 30px;
+      color: #7F7460;
       transform: scale(1.1);
+    }
+
+    button:hover {
+      box-shadow: 1px 10px 10px 2px #38597F, 1px 1px 1px 1px #BFDDFF inset;
+      transform: rotateX(20deg);
       opacity: 0.9;
     }
   }
